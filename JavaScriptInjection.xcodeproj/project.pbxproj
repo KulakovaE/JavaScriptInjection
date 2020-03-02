@@ -13,7 +13,35 @@
 		F34B48D8240C5DAE006E1FBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34B48D6240C5DAE006E1FBE /* Main.storyboard */; };
 		F34B48DA240C5DB2006E1FBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34B48D9240C5DB2006E1FBE /* Assets.xcassets */; };
 		F34B48DD240C5DB2006E1FBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34B48DB240C5DB2006E1FBE /* LaunchScreen.storyboard */; };
+		F34B48EB240C64B0006E1FBE /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F34B48EA240C64B0006E1FBE /* Media.xcassets */; };
+		F34B48ED240C64B0006E1FBE /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34B48EC240C64B0006E1FBE /* ActionViewController.swift */; };
+		F34B48F0240C64B0006E1FBE /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F34B48EE240C64B0006E1FBE /* MainInterface.storyboard */; };
+		F34B48F4240C64B0006E1FBE /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F34B48E8240C64B0006E1FBE /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F34B48F2240C64B0006E1FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F34B48C5240C5DAE006E1FBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F34B48E7240C64B0006E1FBE;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F34B48F8240C64B0006E1FBE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F34B48F4240C64B0006E1FBE /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F34B48CD240C5DAE006E1FBE /* JavaScriptInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaScriptInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +52,22 @@
 		F34B48D9240C5DB2006E1FBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F34B48DC240C5DB2006E1FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F34B48DE240C5DB2006E1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34B48E8240C64B0006E1FBE /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F34B48EA240C64B0006E1FBE /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F34B48EC240C64B0006E1FBE /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		F34B48EF240C64B0006E1FBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F34B48F1240C64B0006E1FBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F34B48CA240C5DAE006E1FBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34B48E5240C64B0006E1FBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F34B48CF240C5DAE006E1FBE /* JavaScriptInjection */,
+				F34B48E9240C64B0006E1FBE /* Extension */,
 				F34B48CE240C5DAE006E1FBE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				F34B48CD240C5DAE006E1FBE /* JavaScriptInjection.app */,
+				F34B48E8240C64B0006E1FBE /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +109,17 @@
 			path = JavaScriptInjection;
 			sourceTree = "<group>";
 		};
+		F34B48E9240C64B0006E1FBE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F34B48EA240C64B0006E1FBE /* Media.xcassets */,
+				F34B48EC240C64B0006E1FBE /* ActionViewController.swift */,
+				F34B48EE240C64B0006E1FBE /* MainInterface.storyboard */,
+				F34B48F1240C64B0006E1FBE /* Info.plist */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +130,34 @@
 				F34B48C9240C5DAE006E1FBE /* Sources */,
 				F34B48CA240C5DAE006E1FBE /* Frameworks */,
 				F34B48CB240C5DAE006E1FBE /* Resources */,
+				F34B48F8240C64B0006E1FBE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F34B48F3240C64B0006E1FBE /* PBXTargetDependency */,
 			);
 			name = JavaScriptInjection;
 			productName = JavaScriptInjection;
 			productReference = F34B48CD240C5DAE006E1FBE /* JavaScriptInjection.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F34B48E7240C64B0006E1FBE /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F34B48F5240C64B0006E1FBE /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				F34B48E4240C64B0006E1FBE /* Sources */,
+				F34B48E5240C64B0006E1FBE /* Frameworks */,
+				F34B48E6240C64B0006E1FBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = F34B48E8240C64B0006E1FBE /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +170,9 @@
 				ORGANIZATIONNAME = "Elena Kulakova";
 				TargetAttributes = {
 					F34B48CC240C5DAE006E1FBE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F34B48E7240C64B0006E1FBE = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
@@ -116,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				F34B48CC240C5DAE006E1FBE /* JavaScriptInjection */,
+				F34B48E7240C64B0006E1FBE /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +204,15 @@
 				F34B48DD240C5DB2006E1FBE /* LaunchScreen.storyboard in Resources */,
 				F34B48DA240C5DB2006E1FBE /* Assets.xcassets in Resources */,
 				F34B48D8240C5DAE006E1FBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F34B48E6240C64B0006E1FBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34B48EB240C64B0006E1FBE /* Media.xcassets in Resources */,
+				F34B48F0240C64B0006E1FBE /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +229,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F34B48E4240C64B0006E1FBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F34B48ED240C64B0006E1FBE /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F34B48F3240C64B0006E1FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F34B48E7240C64B0006E1FBE /* Extension */;
+			targetProxy = F34B48F2240C64B0006E1FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F34B48D6240C5DAE006E1FBE /* Main.storyboard */ = {
@@ -161,6 +262,14 @@
 				F34B48DC240C5DB2006E1FBE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F34B48EE240C64B0006E1FBE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F34B48EF240C64B0006E1FBE /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +392,7 @@
 		F34B48E2240C5DB2006E1FBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ2U97422Q;
@@ -301,6 +411,7 @@
 		F34B48E3240C5DB2006E1FBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ2U97422Q;
@@ -311,6 +422,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.elena.JavaScriptInjection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F34B48F6240C64B0006E1FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ2U97422Q;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elena.JavaScriptInjection.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F34B48F7240C64B0006E1FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ2U97422Q;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.elena.JavaScriptInjection.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +482,15 @@
 			buildConfigurations = (
 				F34B48E2240C5DB2006E1FBE /* Debug */,
 				F34B48E3240C5DB2006E1FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F34B48F5240C64B0006E1FBE /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F34B48F6240C64B0006E1FBE /* Debug */,
+				F34B48F7240C64B0006E1FBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
